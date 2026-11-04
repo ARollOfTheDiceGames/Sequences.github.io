@@ -109,32 +109,36 @@
     </div>
 
     <script>
-        const correctAnswer = "4";
+       const correctAnswer = "4";
 
-        document.getElementById("quizForm")
-            .addEventListener("submit", function(event) {
+document.getElementById("quizForm")
+    .addEventListener("submit", function(event) {
 
-                event.preventDefault();
+        event.preventDefault();
 
-                const userAnswer = document
-                    .getElementById("answer")
-                    .value.trim();
+        const userAnswer = document
+            .getElementById("answer")
+            .value.trim();
 
-                const feedback = document.getElementById("feedback");
+        const feedback = document.getElementById("feedback");
 
-                if (userAnswer === correctAnswer) {
+        if (userAnswer === correctAnswer) {
 
-                    feedback.textContent = "√ Correct! Great job!";
-                    feedback.className = "feedback correct";
+            alert("Correct! You've solved today's Sequence! This kind of a pattern is a numerical order pattern. The numbers increase in numerical order.");
 
-                } else {
+            feedback.textContent = "√ Correct! Great job!";
+            feedback.className = "feedback correct";
 
-                    feedback.textContent = "✗ Incorrect. Try again!";
-                    feedback.className = "feedback incorrect";
+        } else {
 
-                }
+            alert("Wrong! Try it again. Or quit. You could do that too, I guess.");
 
-            });
+            feedback.textContent = "✗ Incorrect. Try again!";
+            feedback.className = "feedback incorrect";
+
+        }
+
+    });
     </script>
 
 </body>
