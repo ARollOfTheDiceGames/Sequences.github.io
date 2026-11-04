@@ -89,7 +89,7 @@
         <form id="quizForm">
 
             <div class="sequence">
-                1, 2, 3, 4, 5, 6, 7, 8, 9, ...
+                1,2,3 ...
             </div>
 
             <input
@@ -109,7 +109,7 @@
     </div>
 
     <script>
-        const correctAnswer = "10";
+        const correctAnswer = "4";
 
         document.getElementById("quizForm")
             .addEventListener("submit", function(event) {
@@ -124,7 +124,7 @@
 
                 if (userAnswer === correctAnswer) {
 
-                    feedback.textContent = "✓ Correct! Great job!";
+                    feedback.textContent = "√ Correct! Great job!";
                     feedback.className = "feedback correct";
 
                 } else {
