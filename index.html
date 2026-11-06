@@ -91,7 +91,7 @@
         <form id="quizForm">
 
             <div class="sequence">
-                1,2,3 ...
+                J, F, M, A, M, J, J, S...
             </div>
 
             <input
@@ -111,7 +111,7 @@
     </div>
 
     <script>
-       const correctAnswer = "4";
+       const correctAnswer = "o";
 
 document.getElementById("quizForm")
     .addEventListener("submit", function(event) {
@@ -126,7 +126,7 @@ document.getElementById("quizForm")
 
         if (userAnswer === correctAnswer) {
 
-            alert("Right! You've solved today's Sequence! This kind of a pattern is a numerical order pattern. The numbers increase in numerical order.");
+            alert("Right! You've solved today's Sequence! This pattern is monthly. Its the first letter of the months of a year.");
 
             feedback.textContent = "√ Correct! Great job!";
             feedback.className = "feedback correct";
